@@ -37,7 +37,6 @@ const SwapCard: React.FC<Props> = (props) => {
   const { className, side, value, dropdown = [], onChange } = props;
 
   const [state, setState] = useState<SwapCardValue>(value);
-
   const onChangeSelect = (v: string) => {
     if (side === "From") {
       setState((prev) => ({
